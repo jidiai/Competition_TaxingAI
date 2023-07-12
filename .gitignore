@@ -1,0 +1,10 @@
+__pycache__
+.idea*
+/logs
+.DS_Store
+TaxAI/__pycache__
+TaxAI/.idea*
+TaxAI/logs
+TaxAI/.DS_Store
+TaxAI/*/__pycache__/*
+TaxAI/.idea
