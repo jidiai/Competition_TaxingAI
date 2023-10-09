@@ -32,7 +32,7 @@ Environment:
       consumption_tax_rate: 0.065
       interest_rate: 0.04
       gini_weight: 1
-      gov_task: "gdp"  # choices: {"gdp", "gini", "social_welfare", "gdp_gini"}
+      gov_task: "gdp_gini"  # choices: {"gdp", "gini", "social_welfare", "gdp_gini"}
 
 
 Trainer:
