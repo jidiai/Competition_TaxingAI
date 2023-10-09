@@ -85,6 +85,7 @@ class Taxing_Household(Game):
         self.init_info = None
         self.won = {}
         self.n_return = [0]*self.n_player
+        self.total_r = np.zeros(self.n_player)
 
         self.current_state = (global_obs, private_obs)
         self.all_observes = self.get_all_observes()
@@ -100,7 +101,7 @@ class Taxing_Household(Game):
         self.current_state = (global_obs, private_obs)
         self.all_observes = self.get_all_observes()
 
-        self.house_r = house_r
+        self.total_r += house_r[:,0]
 
         self.step_cnt += 1
         self.done = done
@@ -180,7 +181,8 @@ class Taxing_Household(Game):
         return '-1'
 
     def set_n_return(self):
-        self.n_return = list(np.array(self.n_return) + self.house_r[:,0])
+        self.n_return = list(self.total_r)
+        # self.n_return = list(np.array(self.n_return) + self.house_r[:,0])
 
 
 
