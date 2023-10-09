@@ -23,6 +23,8 @@ A tutorial on Jidi: [Tutorial](https://github.com/jidiai/ai_lib/blob/master/asse
 The competition adopts a Taxing simulator [TaxingAI](https://github.com/jidiai/TaxAI.git). A brief description can be found on [JIDI](http://www.jidiai.cn/env_detail?envid=99).
 A complementary document is also presented in [docs](./docs/).
 
+Paper: [TaxAI: A Dynamic Economic Simulator and Benchmark for Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2309.16307)
+
 
 
 
