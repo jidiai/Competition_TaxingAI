@@ -13,7 +13,11 @@ A tutorial on Jidi: [Tutorial](https://github.com/jidiai/ai_lib/blob/master/asse
 
 
 ## Environment
-The competition adopts a Taxing simulator [TaxingAI](https://github.com/jidiai/TaxAI.git). A detailed description can be found on [JIDI](http://www.jidiai.cn/env_detail?envid=99)
+The competition adopts a Taxing simulator [TaxingAI](https://github.com/jidiai/TaxAI.git). A brief description can be found on [JIDI](http://www.jidiai.cn/env_detail?envid=99).
+A complementary document is also presented in [docs](./docs/).
+
+
+
 
 
 ## Quick Start
