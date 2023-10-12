@@ -10,6 +10,13 @@ This repo provide the source code for the [CCF 2023 Taxing AI Competition ](http
 
 
 
+## Update!
+
+**2023/10/09**: Please note that the `gov_task` hyperparameter in the ``n4.yaml`` config file should be `"gdp_gini"`. Our evaluation backend is constantly evaluating the `gdp_gini` of your 
+submission according to the competition description. Apologize for the misguidance here and any inconvenience. We will extend the submission deadline to let you tune your submissions. 
+
+Relevant commit: [https://github.com/jidiai/Competition_TaxingAI/commit/f30b8010fa9cd14813d1f96a3ccb2520394bc1d8](https://github.com/jidiai/Competition_TaxingAI/commit/f30b8010fa9cd14813d1f96a3ccb2520394bc1d8)
+
 
 ## Multi-Agent Game Evaluation Platform --- Jidi (及第)
 Jidi supports online evaluation service for various games/simulators/environments/testbeds. Website: [www.jidiai.cn](www.jidiai.cn).
@@ -23,6 +30,8 @@ A complementary document is also presented in [docs](./docs/).
 
 Paper link: [TaxAI: A Dynamic Economic Simulator and Benchmark for Multi-Agent Reinforcement Learning
 ](https://arxiv.org/abs/2309.16307)
+
+Paper: [TaxAI: A Dynamic Economic Simulator and Benchmark for Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2309.16307)
 
 
 
