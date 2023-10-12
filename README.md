@@ -4,6 +4,11 @@
 
 This repo provide the source code for the [CCF 2023 Taxing AI Competition ](http://www.jidiai.cn/compete_detail?compete=42)
 
+## Update
+
+- **2023.10.12: In the government track, we take the sigmoid of the reward at each time step and compute the total reward as the evaluation metric.**
+
+
 
 
 ## Multi-Agent Game Evaluation Platform --- Jidi (及第)
@@ -14,7 +19,10 @@ A tutorial on Jidi: [Tutorial](https://github.com/jidiai/ai_lib/blob/master/asse
 
 ## Environment
 The competition adopts a Taxing simulator [TaxingAI](https://github.com/jidiai/TaxAI.git). A brief description can be found on [JIDI](http://www.jidiai.cn/env_detail?envid=99).
-A complementary document is also presented in [docs](./docs/).
+A complementary document is also presented in [docs](./docs/). 
+
+Paper link: [TaxAI: A Dynamic Economic Simulator and Benchmark for Multi-Agent Reinforcement Learning
+](https://arxiv.org/abs/2309.16307)
 
 
 
