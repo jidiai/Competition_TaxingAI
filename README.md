@@ -6,16 +6,15 @@ This repo provide the source code for the [CCF 2023 Taxing AI Competition ](http
 
 ## Update
 
-- **2023.10.12: In the government track, we take the sigmoid of the reward at each time step and compute the total reward as the evaluation metric.**
 
 
 
 ## Update!
 
-**2023/10/09**: Please note that the `gov_task` hyperparameter in the ``n4.yaml`` config file should be `"gdp_gini"`. Our evaluation backend is constantly evaluating the `gdp_gini` of your 
-submission according to the competition description. Apologize for the misguidance here and any inconvenience. We will extend the submission deadline to let you tune your submissions. 
+- **2023.10.12**: In the government track, we take the sigmoid of the reward at each time step. This is to avoid the superiority of policies terminating the episode early.
 
-Relevant commit: [https://github.com/jidiai/Competition_TaxingAI/commit/f30b8010fa9cd14813d1f96a3ccb2520394bc1d8](https://github.com/jidiai/Competition_TaxingAI/commit/f30b8010fa9cd14813d1f96a3ccb2520394bc1d8)
+- **2023/10/09**: Please note that the `gov_task` hyperparameter in the ``n4.yaml`` config file should be `"gdp_gini"`. Our evaluation backend is constantly evaluating the `gdp_gini` of your 
+submission according to the competition description.
 
 
 ## Multi-Agent Game Evaluation Platform --- Jidi (及第)
