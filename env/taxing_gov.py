@@ -103,6 +103,8 @@ class Taxing_Gov(Game):
         self.current_state = (global_obs, private_obs)
         self.all_observes = self.get_all_observes()
 
+        gov_r = 1 / (1 + np.exp(-gov_r))
+
         reward = gov_r #dict(zip(self.agent_id, [gov_r, house_r]))
         self.total_r += reward
         self.step_cnt += 1
