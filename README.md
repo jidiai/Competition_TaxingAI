@@ -4,10 +4,6 @@
 
 This repo provide the source code for the [CCF 2023 Taxing AI Competition ](http://www.jidiai.cn/compete_detail?compete=42)
 
-## Update
-
-
-
 
 ## Update!
 
@@ -26,9 +22,6 @@ A tutorial on Jidi: [Tutorial](https://github.com/jidiai/ai_lib/blob/master/asse
 ## Environment
 The competition adopts a Taxing simulator [TaxingAI](https://github.com/jidiai/TaxAI.git). A brief description can be found on [JIDI](http://www.jidiai.cn/env_detail?envid=99).
 A complementary document is also presented in [docs](./docs/). 
-
-Paper link: [TaxAI: A Dynamic Economic Simulator and Benchmark for Multi-Agent Reinforcement Learning
-](https://arxiv.org/abs/2309.16307)
 
 Paper: [TaxAI: A Dynamic Economic Simulator and Benchmark for Multi-Agent Reinforcement Learning](https://arxiv.org/abs/2309.16307)
 
