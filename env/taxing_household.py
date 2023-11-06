@@ -2,7 +2,7 @@ import random
 import os
 import sys
 from pathlib import Path
-CURRENT_PATH = str(Path(__file__).resolve().parent.parent.parent)
+CURRENT_PATH = str(Path(__file__).resolve().parent.parent)
 taxing_path = os.path.join(CURRENT_PATH)
 sys.path.append(taxing_path)
 
@@ -109,7 +109,7 @@ class Taxing_Household(Game):
             self.set_n_return()
             print('Final n_return = ', self.n_return)
 
-        reward = gov_r #dict(zip(self.agent_id, [gov_r, house_r]))
+        reward = house_r[:,0] #dict(zip(self.agent_id, [gov_r, house_r]))
 
         return self.all_observes, reward, self.done, info_before, info_after
 
@@ -121,7 +121,9 @@ class Taxing_Household(Game):
 
     def decode(self, joint_action):
         joint_action_decode = {}
-        joint_action_decode[self.controllable_agent_id] = joint_action[0][0]
+        processed_action = [joint_action[i][0][i] for i in range(len(joint_action))]
+        joint_action_decode[self.controllable_agent_id] = np.stack(processed_action)
+
         gov_action = None
         for gov_idx, house_obs in enumerate(self.gov_obs):
             _action = self.sub_controller[gov_idx](house_obs)[0]

@@ -2,7 +2,7 @@ import random
 import os
 import sys
 from pathlib import Path
-CURRENT_PATH = str(Path(__file__).resolve().parent.parent.parent)
+CURRENT_PATH = str(Path(__file__).resolve().parent.parent)
 taxing_path = os.path.join(CURRENT_PATH)
 sys.path.append(taxing_path)
 
