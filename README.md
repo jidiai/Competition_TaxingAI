@@ -43,7 +43,7 @@ Paper: [TaxAI: A Dynamic Economic Simulator and Benchmark for Multi-Agent Reinfo
 You can use any tool to manage your python environment. Here, we use conda as an example.
 
 ```bash
-conda create -n taxingai-venv python==3.7.5  #3.8, 3.9
+conda create -n taxingai-venv python==3.9  #3.10
 conda activate taxingai-venv
 ```
 
@@ -52,6 +52,7 @@ Next, clone the repository and install the necessary dependencies:
 git clone https://github.com/jidiai/Competition_TaxingAI.git
 cd Competition_TaxingAI
 pip install -r requirements.txt
+conda install numba==0.58.0
 ```
 
 Finally, run the game by executing:
